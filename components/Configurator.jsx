@@ -1,6 +1,69 @@
-"use client";
+function Configurator({ color, interior, wheel, updateOptions }) {
+  console.log(color, interior, wheel);
+  const exteriorSwatch = [
+    {
+      id: 0,
+      name: "Sun Soaked",
+      src: "/swatch/sun_soaked.png",
+    },
+    {
+      id: 1,
+      name: "Sea Grass",
+      src: "/swatch/sea_grass.png",
+    },
+    {
+      id: 2,
+      name: "Black Pearl",
+      src: "/swatch/black_pearl.png",
+    },
+    {
+      id: 3,
+      name: "Red Planet",
+      src: "/swatch/red_planet.png",
+    },
+    {
+      id: 4,
+      name: "Stealth Green",
+      src: "/swatch/stealth_green.png",
+    },
+    {
+      id: 5,
+      name: "Blue Planet",
+      src: "/swatch/blue_planet.png",
+    },
+  ];
 
-function Configurator() {
+  const interiorSwatch = [
+    {
+      id: 0,
+      name: "dark",
+      src: "/swatch/interior/dark.png",
+    },
+    {
+      id: 1,
+      name: "white",
+      src: "/swatch/interior/light.png",
+    },
+  ];
+
+  const wheelsOptions = [
+    {
+      id: 0,
+      name: "AeroStealth",
+      src: "/wheels/aerostealth.png",
+    },
+    {
+      id: 1,
+      name: "SlipStream Black",
+      src: "/wheels/slipstream_black.png",
+    },
+    {
+      id: 2,
+      name: "Vortex",
+      src: "/wheels/vortex.png",
+    },
+  ];
+
   return (
     <div>
       {/* Headings */}
@@ -14,43 +77,61 @@ function Configurator() {
 
       {/* Exterior Colors */}
       <div className="my-3">
-        <h3 className="font-bold uppercase">Exterior Color</h3>
+        <h3 className="font-bold uppercase mb-3">Exterior Color</h3>
         <div className="flex gap-2">
-          {new Array(6).fill(1).map((_, index) => (
+          {exteriorSwatch.map((colorObj) => (
             <button
-              key={index}
-              onClick={() => console.log("Exterior Clicked")}
-              className="hover:scale-105 transition-transform duration-100"
+              key={colorObj.id}
+              onClick={() => updateOptions("color", colorObj.name)}
+              className={`hover:scale-105 transition-transform duration-100  ${
+                color === colorObj.name
+                  ? "border-2 border-blue-300 rounded-full"
+                  : ""
+              }`}
             >
-              <img
-                src="images/blue_planet.png"
-                alt="Black Pearl"
-                className="w-12"
-              />
+              <img src={colorObj.src} alt="Black Pearl" className="w-12" />
             </button>
           ))}
         </div>
       </div>
+
       {/* Interior Colors */}
-      <div className="my-3">
-        <h3 className="font-bold uppercase">Interior Color</h3>
+      <div className="my-12">
+        <h3 className="font-bold uppercase mb-3">Interior Color</h3>
         <div className="flex gap-2">
-          {new Array(3).fill(1).map((_, index) => (
+          {interiorSwatch.map((colorObj) => (
             <button
-              key={index}
-              onClick={() => console.log("Exterior Clicked")}
-              className="hover:scale-105 transition-transform duration-100"
+              key={colorObj.id}
+              onClick={() => updateOptions("interior", colorObj.name)}
+              className={`hover:scale-105 transition-transform duration-100  ${
+                colorObj.name === interior
+                  ? "border-2 border-blue-300 rounded-full"
+                  : ""
+              }`}
             >
-              <img
-                src="images/blue_planet.png"
-                alt="Black Pearl"
-                className="w-12"
-              />
+              <img src={colorObj.src} alt="Black Pearl" className="w-14" />
             </button>
           ))}
         </div>
       </div>
+
       {/* Wheel Options */}
+      <div className="my-3">
+        <h3 className="font-bold uppercase mb-3">Wheel Options</h3>
+        <div className="flex gap-2">
+          {wheelsOptions.map((wheelObj) => (
+            <button
+              key={wheelObj.id}
+              onClick={() => updateOptions("wheel", wheelObj.name)}
+              className={`hover:scale-105 transition-transform duration-100  ${
+                wheelObj.name === wheel ? "border-2 border-blue-300" : ""
+              }`}
+            >
+              <img src={wheelObj.src} alt="Black Pearl" className="w-16" />
+            </button>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
