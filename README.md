@@ -14,7 +14,7 @@ Welcome to the Fisker Ocean Car Configurator! This project allows users to custo
 - **🎨 Tailwind CSS**: Utility-first CSS framework for styling.
 
 ### Final Configured Car
-![Final Car Screenshot](./public/images/final-config.png)
+![Final Car Screenshot](./public/car_configurator.png)
 
 ## 🚢 Deployment
 
@@ -24,8 +24,7 @@ This project is optimized for deployment on Vercel:
 2. Go to [Vercel](https://vercel.com/) and import your project.
 3. Follow the setup instructions and deploy.
 
-### Final Configured Car
-![Final Car Screenshot](./public/images/final-config.png)
+
 
 
 ## 💡 Acknowledgments
