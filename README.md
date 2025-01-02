@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🚗 Car Configurator Project - Fisker Ocean
 
-## Getting Started
+Welcome to the Fisker Ocean Car Configurator! This project allows users to customize and configure their ideal Fisker Ocean electric vehicle. Built with Next.js, React, and Tailwind CSS, it provides a seamless and responsive user experience.
 
-First, run the development server:
+## ✨ Features
+- **🎨 Interactive Car Customization**: Users can select car models, colors, wheel types, and other customizable features.
+- **📊 Dynamic Visualization**: Real-time updates as users change configurations.
+- **📱 Responsive Design**: Works seamlessly on both desktop and mobile devices.
+- **⚡ High Performance**: Optimized using Next.js for fast rendering.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Technologies Used
+- **⚛️ Next.js**: Framework for server-rendered React applications.
+- **⚛️ React.js**: Component-based UI library for dynamic interfaces.
+- **🎨 Tailwind CSS**: Utility-first CSS framework for styling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Final Configured Car
+![Final Car Screenshot](./public/images/final-config.png)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚢 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🌐 Vercel
+This project is optimized for deployment on Vercel:
+1. Push your repository to GitHub.
+2. Go to [Vercel](https://vercel.com/) and import your project.
+3. Follow the setup instructions and deploy.
 
-## Learn More
+### Final Configured Car
+![Final Car Screenshot](./public/images/final-config.png)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 Acknowledgments
+- Special thanks to Fisker for the inspiration.
+- [📘 Next.js Documentation](https://nextjs.org/docs)
+- [📘 React Documentation](https://reactjs.org/docs/getting-started.html)
+- [📘 Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
