@@ -7,10 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // colors: {
-      //   background: "var(--background)",
-      //   foreground: "var(--foreground)",
-      // },
+      fontFamily: {
+        sans: ["HK Grotesk", "sans-serif"],
+      },
     },
   },
   plugins: [],
